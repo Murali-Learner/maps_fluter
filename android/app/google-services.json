@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "129135887362",
+    "project_id": "fluttermaps-748da",
+    "storage_bucket": "fluttermaps-748da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129135887362:android:64c8955884e8967962d31b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_maps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129135887362-rmvbsg1prtkn4326ncpcurgnabi9ncgh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_maps",
+            "certificate_hash": "87badf795a5fa549f7f13854216201f27843535f"
+          }
+        },
+        {
+          "client_id": "129135887362-7jqrb1qo8326vsk6fntu5udcfo2e6flm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBavAXIQuiXByYvRwcwIwiJXJkCLauJAnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129135887362-7jqrb1qo8326vsk6fntu5udcfo2e6flm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

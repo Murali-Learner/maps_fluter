@@ -28,20 +28,6 @@ class _MapScreenState extends State<MapScreen> {
     super.dispose();
   }
 
-  String _locationMessage = "";
-
-  _getUserLocation() async {
-    final position = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high);
-    print(position);
-
-    setState(() {
-      _locationMessage = "${position.latitude}, ${position.longitude}";
-    });
-    print(",,,,,,,$_locationMessage");
-    return _locationMessage;
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -164,13 +150,11 @@ class _MapScreenState extends State<MapScreen> {
         backgroundColor: Theme.of(context).primaryColor,
         foregroundColor: Colors.black,
         onPressed: () {
-          _getUserLocation();
-          print(",------$_locationMessage");
-          // _googleMapController.animateCamera(
-          //   _info != null
-          //       ? CameraUpdate.newLatLngBounds(_info.bounds, 100.0)
-          //       : CameraUpdate.newCameraPosition(_initialCameraPosition),
-          // );
+          _googleMapController.animateCamera(
+            _info != null
+                ? CameraUpdate.newLatLngBounds(_info.bounds, 100.0)
+                : CameraUpdate.newCameraPosition(_initialCameraPosition),
+          );
         },
         child: const Icon(Icons.center_focus_strong),
       ),
